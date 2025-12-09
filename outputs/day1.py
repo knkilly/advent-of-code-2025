@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 def read_lines_to_list(file_path):
@@ -10,7 +9,7 @@ def read_lines_to_list(file_path):
     return lines
 
 def calculate_day_1_answers():
-    data_path = os.path.join(Path(__file__).parent.parent, "data", "day1.txt")
+    data_path = Path(__file__,"..", "..", "data", "day1.txt").resolve()
     rotations = read_lines_to_list(file_path=data_path)
 
     def calculate_password_part1(rotations):
