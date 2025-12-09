@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 def calculate_day_2_answers():
